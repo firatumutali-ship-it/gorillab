@@ -1,16 +1,24 @@
-# Goril Lab VR - Aşama 3 (Tek oyunculu / Bot modu)
+# Goril Lab VR - Güncellenmiş sürüm
 
-## Ne var (çalışıyor)
-- Mor goril, sadece ellerle hareket (yere/duvara vur, it, tırman), kozmetik + mağaza + profil
-- 3D ana menü (BOT MODE, MULTIPLAYER, AYARLAR, KOZMETİK, KREDİLER)
-- Konuşan Türkçe botlar, hammer görünce kaçma/saklanma/uyarma, ban/kick/jumpscare
-- STAFF ONLY odası: kod paneli, sürgülü kapı, yönetim bilgisayarı, hammer rafı, rol sistemi, limit/bekleme, log
-- Staff giriş etkinliği (botlar odaya toplanır)
-- 3 canavar: Karanlık Babun, Gölge, Sürüngen
-## Henüz YOK
-- Online multiplayer (oda kodu, ses sohbeti) -> MULTIPLAYER sayfası şimdilik boş
-- Gerçek Quest'te test edilmedi (sadece masaüstü simülasyon)
-## Staff kodları (config.js, YAYINDAN ÖNCE DEĞİŞTİR): 1907 owner, 4242 admin, 1234 staff
-## Hammer: Staff odasında yan duvardaki hammerı tut (grip tuşu), bota hızlı vur.
-## Menüye dönüş: B + Y aynı anda.
-## Test: dist/ klasörünü https adresine koy, Quest tarayıcısında aç, "VR'A GİR".
+## Eklenen / tamamlanan özellikler
+- SHOP: Kozmetik mağazası; coin ile renk ve kozmetik satın alma.
+- TECH TREE: Gold ile Hileci Tarayıcı, Ödül Artışı ve Nadir Hileci Algısı yükseltmeleri.
+- Hileci botlar: Yaklaşık %14 doğma ihtimali; normal hileciler Fly kullanır.
+- Nadir hileciler: Daha düşük ihtimalle Noclip, Invincible veya Fly yeteneklerinden biriyle doğar.
+- Hilecilerin parlaması ve HILECI etiketi yalnızca STAFF / ADMIN / OWNER rolünde görünür.
+- STAFF yönetim bilgisayarındaki GÖREV sekmesi yalnızca yetkili rolde görünür.
+- Hileci botu STAFF bilgisayarından banlamak +10 Gold verir; Ödül Artışı yükseltmesi ödülü artırır.
+- STAFF odasına bot girişi engellendi. Botlar odanın içine değil girişine toplanır.
+- STAFF odaya girince botlar "LAN STAFF GELDİ OHA" diye bağırır ve girişte bekler.
+- STAFF odadan herhangi bir hammer ile çıkınca botlar kaçar.
+- Nadir Invincible botlar hammer darbelerinden etkilenmez; yine de yönetim bilgisayarından banlanabilir.
+
+## Kontroller / notlar
+- Quest tarayıcısında oyunu açıp VR başlat. Masaüstü test için URL sonuna `?desktop` eklenebilir.
+- Staff kodları mevcut projedeki gibi: `1907` Owner, `4242` Admin, `1234` Staff. Yayına koymadan önce bunları değiştir.
+- Multiplayer menüsü projede henüz tamamlanmış çevrimiçi altyapı değildir.
+
+## Dosyalar
+- `index.html` ve `Goril Lab VR.html`: Oyun
+- `manifest.webmanifest`: PWA bilgileri
+- `sw.js`: çevrimdışı önbellek
