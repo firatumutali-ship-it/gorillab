@@ -1,22 +1,37 @@
-# Goril Lab VR - Güncellenmiş sürüm
+# Gorilla Lab VR — Özellik güncellemesi
 
-## Eklenen / tamamlanan özellikler
-- SHOP: Kozmetik mağazası; coin ile renk ve kozmetik satın alma.
-- TECH TREE: Gold ile Hileci Tarayıcı, Ödül Artışı ve Nadir Hileci Algısı yükseltmeleri.
-- Hileci botlar: Yaklaşık %14 doğma ihtimali; normal hileciler Fly kullanır.
-- Nadir hileciler: Daha düşük ihtimalle Noclip, Invincible veya Fly yeteneklerinden biriyle doğar.
-- Hilecilerin parlaması ve HILECI etiketi yalnızca STAFF / ADMIN / OWNER rolünde görünür.
-- STAFF yönetim bilgisayarındaki GÖREV sekmesi yalnızca yetkili rolde görünür.
-- Hileci botu STAFF bilgisayarından banlamak +10 Gold verir; Ödül Artışı yükseltmesi ödülü artırır.
-- STAFF odasına bot girişi engellendi. Botlar odanın içine değil girişine toplanır.
-- STAFF odaya girince botlar "LAN STAFF GELDİ OHA" diye bağırır ve girişte bekler.
-- STAFF odadan herhangi bir hammer ile çıkınca botlar kaçar.
-- Nadir Invincible botlar hammer darbelerinden etkilenmez; yine de yönetim bilgisayarından banlanabilir.
+## Haritadaki fiziksel istasyonlar
+- SHOP tezgâhı: Yaklaşınca E ile açılır. Gold ile Neon renk, Altın renk ve Mavi aura alınabilir.
+- TECH TREE istasyonu: Yaklaşınca E ile açılır. Gold ile Sapan, Yay, Ok paketi, Kılıç, Enerji Blaster ve üç yükseltme satın alınabilir.
+- ROOM COMPUTER: Yaklaşınca E ile açılır. VR panelindeki sayı tuşlarıyla 4 haneli oda kodu ayarlanabilir.
+- İstasyon tezgâhlarına çarpışma kutuları eklendi. Canavarların Shop alanına girişi engellendi.
 
-## Kontroller / notlar
-- Quest tarayıcısında oyunu açıp VR başlat. Masaüstü test için URL sonuna `?desktop` eklenebilir.
-- Staff kodları mevcut projedeki gibi: `1907` Owner, `4242` Admin, `1234` Staff. Yayına koymadan önce bunları değiştir.
-- Multiplayer menüsü projede henüz tamamlanmış çevrimiçi altyapı değildir.
+## Oynanış
+- Oyuncu avatarında kol parçaları gizlendi; eller görünür kalır.
+- Silah satın aldıktan sonra sağ elde silah modeli görünür. F ile yakındaki hedefe saldırılır. Yay kullanımı ok tüketir.
+- Hileci botlar mevcut bot sisteminde ara sıra doğar. Normal hileciler Fly; nadir hileciler Fly, Noclip veya Invincible özelliği alabilir.
+- Hileci parıltısı ve etiketi yalnızca Staff / Admin / Owner tarafından görülür.
+- Staff rolündeyken yakındaki hileci botu B ile banlayabilirsin. Her ban Gold verir; Ban Ödülü yükseltmesi ödülü artırır.
+- Günlük görev ekranı J ile açılır. Her gün rastgele bir görev seçilir. Staff için ayrıca hileci banlama görevi bulunur.
+- Günlük giriş ödülü mevcut sistem üzerinden +10 Gold olarak verilir.
+
+## Staff Room
+- Botların Staff Room içine girmesi engellenir; etkinlikte giriş kapısının dışında toplanırlar.
+- Staff içeri girince botlar "LAN STAFF GELDİ OHA" diye bağırır.
+- Staff herhangi bir hammer ile çıkınca botlar kaçar.
+
+## Kontroller
+- E: Yakındaki Shop / Tech Tree / Computer istasyonunu kullan
+- F: Satın alınmış silahla saldır
+- B: Staff olarak yakındaki hileci botu banla
+- J: Günlük görevleri göster
+- Esc: Açık paneli kapat
+- VR: Açılan istasyon panellerine elini uzatıp düğmelere dokun
+
+## Önemli test notu
+- JavaScript sözdizimi kontrol edildi ve ZIP arşivi doğrulandı.
+- Meta Quest üzerinde gerçek cihaz testi bu paket hazırlanırken yapılamadı; ilk açılışta VR kontrolü ve istasyonların konumları denenmelidir.
+- Oda kodu yerel tarayıcıda saklanır. Projedeki multiplayer menüsü tek başına tam çevrimiçi oda sunucusu değildir.
 
 ## Dosyalar
 - `index.html` ve `Goril Lab VR.html`: Oyun
